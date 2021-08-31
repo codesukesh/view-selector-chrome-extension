@@ -1,0 +1,9 @@
+/* html,   body{
+    background: aqua !important;
+} */
+
+.viewSelector{
+    border: 1px dotted !important;
+    background-color: aqua !important;
+    border-radius: .5rem;
+}

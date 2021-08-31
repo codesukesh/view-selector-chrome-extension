@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "View Selector",
+    "description": "Highlight the view(element on view) on mouse hover",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/icon16.png",
+        "32": "/images/icon32.png",
+        "128": "/images/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "css": [
+                "main.css"
+            ],
+            "js":[
+                "app.js"
+            ]
+        }
+    ],
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "permissions":["storage", "scripting"]
+}
